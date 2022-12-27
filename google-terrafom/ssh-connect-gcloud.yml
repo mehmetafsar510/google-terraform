@@ -1,0 +1,8 @@
+ssh-keygen -t rsa -f ~/.ssh/gcloud -C thedoctor
+
+cd ~/.ssh && cat gcloud.pub
+
+paste it
+
+ssh -i gcloud thedoctor@35.200.201.56
+ssh -i gcloud -o UserKnownHostsFile=/dev/null     -o CheckHostIP=no -o StrictHostKeyChecking=no     thedoctor@34.170.174.85
